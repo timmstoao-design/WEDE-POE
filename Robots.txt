@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Block sensitive or unnecessary folders (if they exist later)
+Disallow: /Js/
+Disallow: /CSS/
+Disallow: /Images/
+
+# Sitemap location
+Sitemap: https://stgs.co.za/sitemap.xml

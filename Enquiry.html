@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>STGS | Enquiry</title>
+
+<meta name="description" content="Make enquiries about STGS automotive accessories, pricing, availability, sponsorship or volunteering opportunities.">
+
+<link rel="stylesheet" href="CSS/CSS.css">
+<link rel="icon" type="image/png" href="Images/Logo.svg">
+
+<script src="Js/Js.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+<img src="Images/Logo.svg" alt="STGS logo" class="logo">
+<p class="tagline">Affordable Mods. Premium Feel.</p>
+</header>
+
+<nav>
+<a href="Home.html">Home</a>
+<a href="products.html">Shop</a>
+<a href="about.html">About</a>
+<a href="Enquiry.html">Enquiry</a>
+<a href="contact.html">Contact</a>
+<a href="News.html">News</a>
+</nav>
+
+<h2 class="title">Make an Enquiry</h2>
+
+<p class="subtitle">
+Ask about pricing, availability, product compatibility, or partnership opportunities.
+</p>
+
+<!-- ENQUIRY FORM -->
+<div class="form-wrapper">
+
+<form onsubmit="return submitEnquiry()">
+
+<label>Full Name</label>
+<input type="text" id="enq-name" placeholder="Your name">
+
+<div class="error" id="enqNameError"></div>
+
+<label>Email Address</label>
+<input type="email" id="enq-email" placeholder="Your email">
+
+<div class="error" id="enqEmailError"></div>
+
+<label>Enquiry Type</label>
+<select id="enq-type">
+
+<option value="">Select option</option>
+<option value="product">Product Pricing</option>
+<option value="availability">Product Availability</option>
+<option value="volunteer">Volunteering</option>
+<option value="sponsor">Sponsorship</option>
+
+</select>
+
+<div class="error" id="enqTypeError"></div>
+
+<label>Message</label>
+<textarea id="enq-message" placeholder="Describe your enquiry"></textarea>
+
+<div class="error" id="enqMessageError"></div>
+
+<button type="submit">Submit Enquiry</button>
+
+</form>
+
+</div>
+
+<!-- RESPONSE OUTPUT BOX -->
+<div id="enquiryResponse" class="response-box"></div>
+
+<footer>
+<p>© STGS | ST10127401</p>
+</footer>
+
+</body>
+
+</html>
